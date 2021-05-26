@@ -1,0 +1,17 @@
+{
+  "name": "sub2img",
+  "version": "0.0.1",
+  "description": "Take latest Twitch subscriber and output name as an image",
+  "main": "main.js",
+  "bin": "./main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Faheem Quazi",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "robotjs": "^0.6.0",
+    "tmi.js": "^1.8.3"
+  }
+}
