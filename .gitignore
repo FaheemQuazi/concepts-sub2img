@@ -78,3 +78,16 @@ typings/
 node-v14.15.3-win-x64/
 node14.zip
 out.png
+
+# include prebuilt robotjs since it doesn't build on every system
+!node_modules
+node_modules/*
+!node_modules/robotjs
+node_modules/robotjs/*
+!node_modules/robotjs/build
+!node_modules/robotjs/index.js
+!node_modules/robotjs/package.json
+node_modules/robotjs/build/*
+!node_modules/robotjs/build/Release
+node_modules/robotjs/build/Release/*
+!node_modules/robotjs/build/Release/robotjs.node

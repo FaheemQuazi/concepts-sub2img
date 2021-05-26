@@ -33,7 +33,11 @@ function makeImg(txt) {
     fout.on('finish', () => {
         console.log("~", txt, "written");
         if (cfg.pressKey !== false) {
-            robot.keyTap(cfg.pressKey.k, cfg.pressKey.m);
+            if (cfg.pressKey.m !== undefined) {
+                robot.keyTap(cfg.pressKey.k, cfg.pressKey.m);
+            } else {
+                robot.keyTap(cfg.pressKey.k);
+            }
         }
     });
 }

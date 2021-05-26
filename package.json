@@ -1,6 +1,6 @@
 {
   "name": "sub2img",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Take latest Twitch subscriber and output name as an image",
   "main": "main.js",
   "bin": "./main.js",
